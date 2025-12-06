@@ -1,4 +1,5 @@
-# Pemrograman Berbasis Desktop ☕
+# PEMROGRAMAN BERBASIS DESKTOP
+# UNIVERSITAS TERBUKA
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
@@ -8,13 +9,13 @@ Repository ini berisi kumpulan tugas praktikum untuk mata kuliah **Pemrograman B
 
 Repository ini dibagi menjadi beberapa paket (package) berdasarkan tugas praktikum:
 
-- **`src/tugas1`**: Dasar pemrograman Java (Console App sederhana).
+- **`src/tugas1`**: Dasar pemrograman Java (Console App sederhana If Else & Nested If).
 - **`src/tugas2`**: Manipulasi String, Collection (ArrayList), dan Logika Loop.
 - **`src/tugas3`**: Implementasi OOP (Inheritance, Polymorphism, Encapsulation, Abstraction) dan File I/O.
 
 ---
 
-## ✨ Fitur & Penjelasan Tugas
+## ✨ Fitur & Penjelasannya
 
 ### 1. Tugas 1: Restoran Sederhana (Basic)
 Program kasir sederhana yang dibuat dengan batasan penggunaan logika perulangan (looping) yang minimal, lebih menekankan pada struktur keputusan (`if-else`, `switch-case`).
@@ -59,22 +60,37 @@ Implementasi penuh konsep Pemrograman Berorientasi Objek.
 
 ## 🚀 Cara Menjalankan Project
 
-Pastikan Anda sudah menginstall Java Development Kit (JDK).
-Apabila menggunakan Text Visual Studio Code, Pasang Extension **Pack For Java**
+Pastikan Anda sudah menginstall Java Development Kit (JDK) dan berada di direktori root project (folder tempat `src` berada).
 
-1.  **Clone Repository**
+### Menjalankan Tugas 1
+Tugas 1 menggunakan package `tugas1`.
+1.  **Compile:**
     ```bash
-    git clone [https://github.com/Tpathurrohman612/pemrograman_berbasis_desktop.git](https://github.com/Tpathurrohman612/pemrograman_berbasis_desktop.git)
-    cd pemrograman_berbasis_desktop
+    javac -d bin src/tugas1/*.java
+    ```
+2.  **Run:**
+    ```bash
+    java -cp bin tugas1.Main
     ```
 
-2.  **Compile Codingan**
-    Disarankan melakukan compile dari root folder (`src`). Contoh untuk menjalankan **Tugas 3**:
+### Menjalankan Tugas 2
+Tugas 2 menggunakan package `tugas2`.
+1.  **Compile:**
+    ```bash
+    javac -d bin src/tugas2/*.java
+    ```
+2.  **Run:**
+    ```bash
+    java -cp bin tugas2.Main
+    ```
+
+### Menjalankan Tugas 3
+Tugas 3 menggunakan package `tugas3`.
+1.  **Compile:**
     ```bash
     javac -d bin src/tugas3/*.java
     ```
-
-3.  **Jalankan Program**
+2.  **Run:**
     ```bash
     java -cp bin tugas3.Main
     ```
@@ -83,7 +99,61 @@ Apabila menggunakan Text Visual Studio Code, Pasang Extension **Pack For Java**
 
 ## 📸 Contoh Penggunaan
 
-### Contoh Input Pemesanan (Tugas 2)
-Pada Tugas 2, sistem menerima input dengan format khusus:
+### 1. Contoh Interaksi Tugas 1 (Input Angka)
+Pada Tugas 1, interaksi dilakukan dengan memilih nomor menu secara bertahap. 
 ```text
-Masukkan pesanan: Nasi Goreng = 2
+Daftar Menu Restoran:
+------------------------------------------------------------------
+MAKANAN:
+1. Nasi Ayam Pop        : Rp.35000
+...
+------------------------------------------------------------------
+Pilih angka menu yang ingin dipesan: 1
+Berapa banyak porsi? 2
+Pesan lagi? (ya/tidak): tidak
+
+[INFO] Total belanja Anda > Rp 50.000
+Selamat! Anda berhak Promo GRATIS 2 Minuman.
+Ambil promo? (ya/tidak): ya
+```
+
+
+## 2. Contoh Interaksi TUGAS 2 (Input Format String)
+Pada Tugas 2, interaksi dilakukan dengan nenasukan nama menu lalu masukan jumlah menu yang dipesan (Nasi Rendang = 2). Selain itu, bisa melakukan Manajemen Menu seperti Tambah Menu, Edit menu, atau Hapus Menu.
+```text
+Daftar Menu:
+1. Nasi Ayam Pop, Harga: Rp.35000, Kategori: Makanan
+...
+
+Masukkan pesanan (Format: Nama Menu = Jumlah): Nasi Rendang = 2
+✓ Nasi Rendang berhasil ditambahkan.
+
+Masukkan pesanan (Format: Nama Menu = Jumlah): Es Teh = 1
+✓ Es Teh berhasil ditambahkan.
+
+========================================================================
+
+```
+## 3. Contoh Interaksi TUGAS 3 (Input Angka)
+Pada Tugas 3, interaksi dilakukan dengan memilih nomor menu secara bertahap. Selain itu, bisa melakukan Manajemen Menu seperti Tambah Menu, Edit menu, atau Hapus Menu. Kemudian Struk Pesanan bisa disimpan di folder `struk_pesanan/` dengan format `.txt`.
+```text
+========== MENU UTAMA ==========
+1. Manajemen Menu (Tambah/Edit/Hapus)
+2. Tampilkan Daftar Menu
+3. Terima Pesanan Pelanggan
+4. Hitung Total Biaya Pesanan
+5. Tampilkan & Simpan Struk Pesanan
+6. Simpan Menu ke File
+7. Keluar
+================================
+Pilih menu (1-7): 3
+
+=== TERIMA PESANAN ===
+1. Nasi Ayam Pop          | Rp.35000     | Jenis: Ayam
+2. Jus Alpukat            | Rp.15000     | Jenis: Jus
+...
+Ketik 'selesai' untuk mengakhiri pesanan
+Pilih nomor menu: 1
+Jumlah pesanan: 2
+```
+
