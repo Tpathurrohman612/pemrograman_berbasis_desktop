@@ -1,5 +1,6 @@
 # PEMROGRAMAN BERBASIS DESKTOP
-# UNIVERSITAS TERBUKA
+
+https://youtube.com/playlist?list=PL2XqscR2fD8K4TvyDcN9UU9EsEo6Nj8jH&si=ks-9NSos8DMzq7Ws
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
